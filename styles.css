@@ -6,6 +6,31 @@
     border: none;
 }
 
+/* Render */
+
+.alingTiutuloRender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    margin: -25px 0 0 -25px;
+}
+
+.TituloRender h2{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;/* 78px */
+}
+
+.TituloRender span{
+    color: #FF0045;
+}
+
 body,html{
     width: 100%;
     overflow-x: hidden;
@@ -14,6 +39,7 @@ body,html{
 body{
     background: #ffffff;
 }
+
 
 .headerWave{
     background: #4169E1;
