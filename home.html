@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +7,43 @@
     <link rel="shortcut icon" href="Wave.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="headerWave">
-        <nav class="contentNav">
-             <div class="alingNav">
-                    <div class="TituloHubWave">
-                        <h2>Hub<span>Wave</span></h2>
-                    </div>
+<body class="preload">
+    <div  id="transitionBackground">
+        <div class="content">
+            <header class="headerWave">
+                <nav class="contentNav">
+                     <div class="alingNav">
+                            <div class="TituloHubWave">
+                                <h2>Hub<span>Wave</span></h2>
+                            </div>
+        
+                            <div class="alingLinks">
+                                <ul class="navLinks">
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#">Sobre</a></li>
+                                  <li><a href="#">Outras Cores</a></li>
+                              
+                                  <li class="lidropdown">
+                                    <a href="#">Cores por Imagens</a>
+                                    <ul class="dropdown">
+                                      <li><a href="#">Gradiente</a></li>
+                                    </ul>
+                                  </li>
+                              
+                                  <li><a href="#">Contactos</a></li>
+                                </ul>
+                            </div>
+                </nav>
+            </header>
+            
+            <section class="BlocoInicio">
+                    <div class="alingInicio">
 
-                    <div class="alingLinks">
-                        <a href="">Home</a>
-                        <a href="">Sobre</a>
-                        <a href="">Outras Cores</a>
-                        <a href="">Cores por Imagens <img src="Down.png" alt=""></a>
-                        <a href="">Contactos</a>
                     </div>
-             </div>
-        </nav>
-    </header>
-    
-    <section class="BlocoInicio">
-            <div class="alingInicio">
+            </section>
+        </div>
+    </div>
 
-            </div>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
