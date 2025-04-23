@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body,html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #ffffff;
+}
+
+.headerWave{
+    background: #4169E1;
+    width: auto;
+}
+
+.contentNav{
+    padding: 2vw;
+}
+
+.TituloHubWave h2{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+
+.TituloHubWave span{
+    color: #FF1453;
+}
