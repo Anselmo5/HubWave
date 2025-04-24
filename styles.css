@@ -22,7 +22,7 @@
 .TituloRender h2{
     color: #FFF;
     font-family: Roboto;
-    font-size: 52px;
+    font-size: 3.2em;
     font-style: normal;
     font-weight: 700;/* 78px */
 }
@@ -80,7 +80,6 @@ body{
 
 .alingNav{
     display: flex;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -94,7 +93,7 @@ body{
     text-decoration: none;
     color: #FFF;
     font-family: Roboto;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -120,7 +119,19 @@ body{
     position: relative;
     list-style-type: none;
   }
-  
+
+  .alingLinks a{
+    transition: 1s all;
+  }
+
+  .alingLinks a:hover{
+    color: #FF0045;
+  }
+
+  .dropdown a:hover{
+    color: #ffffff;
+  }
+
   .navLinks a {
     text-decoration: none;
     padding: 10px 15px;
@@ -130,7 +141,7 @@ body{
   .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 70%;
     left: 0;
     background:#FF0045;
     border-radius: 8px;
@@ -166,3 +177,131 @@ body{
 
 
 /* BlocoInicio */
+
+.BlocoInicio{
+  padding: 72px 120px;
+}
+
+.alingInicio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.ConteudoInicio h1{
+  color: #111;
+  font-family: Roboto;
+  font-size: 3.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: -1px;
+}
+
+.ConteudoInicio p{
+  color: #111;
+  font-family: Roboto;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 35vw;
+  margin: 0.5vw;
+}
+
+.IncioBtn{
+  margin: 0.5vw;
+}
+
+.IncioBtn button{
+  background-color: #4169E1;
+  padding: 12px 20px;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+  margin-top: 2vh;
+  border-radius: 0.4vw;
+  overflow: hidden;
+  transition: 1s all;
+}
+
+.IncioBtn button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.4vw;
+  background: #FF0045;
+  z-index: -1;
+  transition: 1s all;
+}
+
+.IncioBtn button:hover{
+  color: #ffffff;
+}
+
+.IncioBtn button:hover::before{
+  width: 100%;
+}
+
+.ImgInicio img{
+  width: 30vw;
+  border-radius: 10px;
+}
+
+
+/* BlocoImge */
+
+.BlocoImgPaleta{
+  padding: 72px 120px;
+  background: #0d0d0d;
+}
+
+/* BlocoRepositorio */
+
+
+.BlocoRepositorio{
+  padding: 72px 120px;
+}
+
+.alingRepositorio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.ContentRepositorio h2{
+  color: #000;
+  font-family: Roboto;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  margin: 0.5vw;
+}
+
+.ContentRepositorio p{
+  color: #111;
+  font-family: Roboto;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  width: 30vw;
+  margin: 0.5vw;
+}
+
+
+.ContentRepositorio span{
+  color: #FF1453;
+}
+
+.ImgRepositorio img{
+  width: 35em;
+  border-radius: 10px;
+}
