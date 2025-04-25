@@ -338,14 +338,15 @@ body{
   margin: 2vw;
 }
 
-.AreaBucarImg{
+.AreaBuscarImg{
   padding: 3vw;
-  width: 50vw;
-  height: 20vh;
+  width: 30vw;
+  height: 25vh;
   background: #ffffff;
   border-radius: 10px;
   margin: 2vw;
   margin-top: 5vh;
+  padding: 2vw;
 }
 
 .SelcetPaleta{
@@ -353,6 +354,20 @@ body{
   justify-content: center;
   margin: 1vw;
   padding: 3vw;
+}
+
+#colorPalette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+img#previewImg {
+  max-width: 300px;
+  border: 2px dashed #ccc;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 

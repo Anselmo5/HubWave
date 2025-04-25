@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HubWave</title>
-    <link rel="shortcut icon" href="Wave.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../assets/Wave.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body class="preload">
+<body class="">
     <div  id="transitionBackground">
         <div class="content">
             <header class="headerWave">
@@ -47,26 +47,25 @@
                             </div>
 
                             <div class="ImgInicio">
-                                <img src="Wave.png" alt="">
+                                <img src="../assets/Wave.png" alt="">
                             </div>
                     </div>
             </section>
 
             <section class="BlocoImgPaleta">
-                        <div class="alingPaletaImg">
-                            <h2>Sua inspiração começa aqui</h2>
-                            <div class="AreaBucarImg">
-                                <div class="alingImgPaleta">
-                                    <label for="uploadImage">
-                                        <img id="previewImg" src="SelecteImg.png" alt="Selecionar imagem">
-                                    </label>
-                                    
-                                    <input type="file" id="uploadImage" accept="image/*" hidden>
-                                </div>
-                            </div>
-
-                            <div class="SelcetPaleta" id="colorPalette"></div>
+                <div class="alingPaletaImg">
+                    <h2>Sua inspiração começa aqui</h2>
+                    <p class="descricao">Selecione uma imagem para descobrir sua paleta de cores</p>
+                    <div class="AreaBuscarImg">
+                        <div class="alingImgPaleta">
+                            <label for="uploadImage">
+                                <img id="previewImg" src="../assets/SelecteImg.png" alt="Selecionar imagem" style="max-width: 100%; display: block;" crossorigin="anonymous">
+                            </label>
+                            <input type="file" id="uploadImage" accept="image/*" hidden>
                         </div>
+                    </div>
+                    <div class="SelcetPaleta" id="colorPalette"></div>
+                </div>
             </section>
 
             <section class="BlocoRepositorio">
@@ -80,7 +79,7 @@
                         </div>
 
                         <div class="ImgRepositorio">
-                            <img src="Repositorio.png" alt="">
+                            <img src="../assets/Repositorio.png" alt="">
                         </div>
                     </div>
             </section>
@@ -96,7 +95,7 @@
                         </div>
                        
                         <div class="FooterImg">
-                            <img src="LinkedIn.png" alt="">
+                            <img src="../assets/LinkedIn.png" alt="">
                         </div>
                     </div>
 
@@ -104,8 +103,9 @@
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="../script/colorThief.js"></script>
+    <script src="../script/script.js"></script>
+    
 </body>
 </html>
