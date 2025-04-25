@@ -57,13 +57,15 @@
                             <h2>Sua inspiração começa aqui</h2>
                             <div class="AreaBucarImg">
                                 <div class="alingImgPaleta">
-                                    <img src="SelecteImg.png" alt="">
+                                    <label for="uploadImage">
+                                        <img id="previewImg" src="SelecteImg.png" alt="Selecionar imagem">
+                                    </label>
+                                    
+                                    <input type="file" id="uploadImage" accept="image/*" hidden>
                                 </div>
                             </div>
 
-                            <div class="SelcetPaleta">
-
-                            </div>
+                            <div class="SelcetPaleta" id="colorPalette"></div>
                         </div>
             </section>
 
@@ -104,5 +106,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
 </body>
 </html>

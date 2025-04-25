@@ -348,6 +348,13 @@ body{
   margin-top: 5vh;
 }
 
+.SelcetPaleta{
+  display: flex;
+  justify-content: center;
+  margin: 1vw;
+  padding: 3vw;
+}
+
 
 /* footer */
 
