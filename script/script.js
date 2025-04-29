@@ -18,6 +18,26 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+// Smof efect transição dentro da página
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".scroll-link");
+  links.forEach(links =>{
+    links.addEventListener("click", (event) => {
+      event.preventDefault()
+      const linkId = links.getAttribute("href")
+      const ElementId = document.querySelector(linkId)
+      if(linkId){
+        ElementId.scrollIntoView({
+          behavior:"smooth",
+          block:"start"
+        })
+      }
+    })
+  })
+})
+
+
 // document.querySelector('.transitionBackground').addEventListener('click', () => {
 //   document.querySelector('.transitionBackground').classList.add('fade-out');
 //   setTimeout(() => {
