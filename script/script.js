@@ -1,11 +1,45 @@
 // transição do background para a tela home
-  window.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.remove("preload");
-  });
-  
+
+
+const transitionBackground = document.getElementById("transitionBackground");
+if (transitionBackground) {
+  transitionBackground.addEventListener('click', () => {
+    transitionBackground.classList.add("fade-out")
+    console.log("fade-out")
+    setTimeout(() => {
+      window.location.href = "home.html"
+    }, 1000)
+  })
+
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.remove("preload");
+});
+
+
+// document.querySelector('.transitionBackground').addEventListener('click', () => {
+//   document.querySelector('.transitionBackground').classList.add('fade-out');
+//   setTimeout(() => {
+//       window.location.href = 'home.html';
+//   }, 1000);
+// });
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const transitionBackground = document.querySelector('.transitionBackground');
+//   if (transitionBackground) { // boa prática: verificar se encontrou
+//       transitionBackground.addEventListener('click', () => {
+//           transitionBackground.classList.add('fade-out');
+//           setTimeout(() => {
+//               window.location.href = 'home.html';
+//           }, 1000);
+//       });
+//   }
+// });
+
+
 //  Função para gerar paleta de cores por  imagem
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("uploadImage");
@@ -41,7 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
             box.setAttribute("data-hex", hex);
             box.addEventListener("click", () => {
               navigator.clipboard.writeText(hex).then(() => {
-                alert("Cor copiada: " + hex);
+                Swal.fire({
+                  title: "Cor Copiada!",
+                  text: `A cor ${hex} foi copiada para a área de transferência.`,
+                  icon: "success",
+                  draggable: true,
+                  background: hex,
+                  color: "#fff",
+                });
               });
             });
 
