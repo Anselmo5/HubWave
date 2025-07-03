@@ -13,24 +13,21 @@
             <header class="headerWave">
                 <nav class="contentNav">
                      <div class="alingNav">
-                            <div class="TituloHubWave">
-                                <h2>Hub<span>Wave</span></h2>
+                            <div class="TituloHubWave" >
+                                <h2 id="RedirectLoading">Hub<span>Wave</span></h2>
                             </div>
         
                             <div class="alingLinks">
                                 <ul class="navLinks">
                                   <li><a href="#home">Home</a></li>
                                   <li><a href="#sobre" class="scroll-link">Sobre</a></li>
-                                  <li><a href="#">Outras Cores</a></li>
+                                  <li><a href="gradiente.html" class="Linkdrop">Gradiente</a></li>
                               
                                   <li class="lidropdown">
                                     <a href="#CoresImagem">Cores por Imagens</a>
-                                    <ul class="dropdown">
-                                      <li><a href="gradiente.html" class="Linkdrop">Gradiente</a></li>
-                                    </ul>
                                   </li>
                               
-                                  <li><a href="#">Contactos</a></li>
+                                  <li><a href="#contato">Contactos</a></li>
                                 </ul>
                             </div>
                 </nav>
@@ -42,7 +39,7 @@
                                 <h1><img src="../assets/arco-iris.png" alt="" > Cores que inspiram</h1>
                                 <p>Cada cor tem uma história. Deixe-se levar por tons que despertam emoções, ideias e novas possibilidades.</p>
                                 <div class="IncioBtn">
-                                    <button>Vamos Comecar</button>
+                                    <a href="#CoresImagem">Vamos Comecar</a>
                                 </div>
                             </div>
 
@@ -59,7 +56,7 @@
                   <div class="AreaBuscarImg">
                       <div class="alingImgPaleta">
                           <label for="uploadImage">
-                              <img id="previewImg" src="../assets/SelecteImg.png" alt="Selecionar imagem" style="max-width: 100%; display: block;" crossorigin="anonymous">
+                              <img id="previewImg" src="../assets/SelecteImg.png"  alt="Selecionar imagem" style="max-width: 100%; display: block;" crossorigin="anonymous">
                           </label>
                           <input type="file" id="uploadImage" accept="image/*" hidden>
                       </div>
@@ -74,7 +71,7 @@
                             <h2>Hue <span>Wave</span></h2>
                             <p>O HubWave foi criado para ser um espaço onde a criatividade encontra as cores. Mais do que uma simples paleta digital, ele é um convite para explorar tonalidades, combinações e gradientes que despertam ideias e emoções. </p>
                             <div class="IncioBtn">
-                                <button>Repositorio</button>
+                                <button onclick="RedirectRepo()"  >Repositorio</button>
                             </div>
                         </div>
 
@@ -84,7 +81,7 @@
                     </div>
             </section>
 
-            <div class="footerHub">
+            <div class="footerHub" id="contato">
                 <div class="alingWave">
                     <div class="footerWave"></div>
                 </div>

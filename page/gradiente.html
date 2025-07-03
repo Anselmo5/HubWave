@@ -12,23 +12,19 @@
             <nav class="contentNav">
                  <div class="alingNav">
                         <div class="TituloHubWave">
-                            <h2>Hub<span>Wave</span></h2>
+                            <h2 id="RedirectLoading">Hub<span>Wave</span></h2>
                         </div>
     
                         <div class="alingLinks">
                             <ul class="navLinks">
-                              <li><a href="#home">Home</a></li>
-                              <li><a href="#sobre" class="scroll-link">Sobre</a></li>
-                              <li><a href="#">Outras Cores</a></li>
+                              <li><a href="./home.html">Home</a></li>
+                               <li><a href="home.html" class="Linkdrop">Cores por Imagens</a></li>
                           
                               <li class="lidropdown">
                                 <a href="#CoresImagem">Gradiente</a>
-                                <ul class="dropdown">
-                                  <li><a href="home.html" class="Linkdrop">Cores por Imagens</a></li>
-                                </ul>
                               </li>
                           
-                              <li><a href="#">Contactos</a></li>
+                              <li><a href="#contato">Contactos</a></li>
                             </ul>
                         </div>
             </nav>
@@ -38,42 +34,77 @@
             <div class="alingSectionColor">
                 <div class="color-block" data-bloqueado="false">
                     <div class="botoes">
-                        <button class="trocar-btn">Trocar</button>
-                        <button class="fixar-btn">Fixar</button>
-                        <button class="copiar-btn">Copiar</button>
-                      </div>
+                        <button class="trocar-btn"><img src="../assets/troca.png" alt="">
+                                <span class="tooltip"> Trocar essa cor</span>
+                        </button>
+                        <button class="fixar-btn"><img src="../assets/pin.png" alt="">
+                            <span class="tooltip">Fixar essa cor</span>
+                        </button>
+                        <button class="copiar-btn"><img src="../assets/copiar.png" alt="">
+                            <span class="tooltip">Copiar cor</span>
+                        </button>
+                    </div>
                 </div>
                
                 <div class="color-block" data-bloqueado="false">
                     <div class="botoes">
-                        <button class="trocar-btn">Trocar</button>
-                        <button class="fixar-btn">Fixar</button>
-                        <button class="copiar-btn">Copiar</button>
-                      </div>
+                        <button class="trocar-btn"><img src="../assets/troca.png" alt="">
+                                <span class="tooltip"> Trocar essa cor</span>
+                        </button>
+                        <button class="fixar-btn"><img src="../assets/pin.png" alt="">
+                            <span class="tooltip">Fixar essa cor</span>
+                        </button>
+                        <button class="copiar-btn"><img src="../assets/copiar.png" alt="">
+                            <span class="tooltip">Copiar cor</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="color-block" data-bloqueado="false">
                     <div class="botoes">
-                        <button class="trocar-btn">Trocar</button>
-                        <button class="fixar-btn">Fixar</button>
-                        <button class="copiar-btn">Copiar</button>
-                      </div>
+                        <button class="trocar-btn"><img src="../assets/troca.png" alt="">
+                                <span class="tooltip"> Trocar essa cor</span>
+                        </button>
+                        <button class="fixar-btn"><img src="../assets/pin.png" alt="">
+                            <span class="tooltip">Fixar essa cor</span>
+                        </button>
+                        <button class="copiar-btn"><img src="../assets/copiar.png" alt="">
+                            <span class="tooltip">Copiar cor</span>
+                        </button>
+                    </div>
+
                 </div>
 
                 <div class="color-block" data-bloqueado="false">
                     <div class="botoes">
-                        <button class="trocar-btn">Trocar</button>
-                        <button class="fixar-btn">Fixar</button>
-                        <button class="copiar-btn">Copiar</button>
-                      </div>
+                        <button class="trocar-btn"><img src="../assets/troca.png" alt="">
+                                <span class="tooltip"> Trocar essa cor</span>
+                        </button>
+                        <button class="fixar-btn"><img src="../assets/pin.png" alt="">
+                            <span class="tooltip">Fixar essa cor</span>
+                        </button>
+                        <button class="copiar-btn"><img src="../assets/copiar.png" alt="">
+                            <span class="tooltip">Copiar cor</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="color-block" data-bloqueado="false">
-                        <div class="botoes">
-                            <button class="trocar-btn">Trocar</button>
-                            <button class="fixar-btn">Fixar</button>
-                            <button class="copiar-btn">Copiar</button>
-                          </div>
+                    <div class="botoes">
+                        <button class="trocar-btn"><img src="../assets/troca.png" alt="">
+                                <span class="tooltip"> Trocar essa cor</span>
+                        </button>
+                        <button class="fixar-btn"><img src="../assets/pin.png" alt="">
+                            <span class="tooltip">Fixar essa cor</span>
+                        </button>
+                        <button class="copiar-btn"><img src="../assets/copiar.png" alt="">
+                            <span class="tooltip">Copiar cor</span>
+                        </button>
+
+                        <div class="CorText">
+                                <span id="CorTexto  "></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,7 +115,7 @@
             </div>
         </section>
 
-        <div class="footerHub">
+        <div class="footerHub" id="contato">
             <div class="alingWave">
                 <div class="footerWave"></div>
             </div>
@@ -103,5 +134,6 @@
         </div>
     </div>
     <script src="../script/GradienteBackground.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,3 @@
-// transição do background para a tela home
-
-
 const transitionBackground = document.getElementById("transitionBackground");
 if (transitionBackground) {
   transitionBackground.addEventListener('click', () => {
@@ -18,8 +15,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// Smof efect transição dentro da página
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".scroll-link");
   links.forEach(links =>{
@@ -37,29 +32,59 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+  function updateGridColumns() {
+    const grids = document.querySelectorAll('.alingSectionColor');
+    if (!grids.length) return;
+    let columns = 5;
+    if (window.innerWidth < 1200) columns = 3;
+    if (window.innerWidth < 900) columns = 2;
+    if (window.innerWidth < 600) columns = 1;
+    grids.forEach(grid => {
+      grid.style.display = "grid";
+      grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+    });
+  }
 
-// document.querySelector('.transitionBackground').addEventListener('click', () => {
-//   document.querySelector('.transitionBackground').classList.add('fade-out');
-//   setTimeout(() => {
-//       window.location.href = 'home.html';
-//   }, 1000);
-// });
+  window.addEventListener('resize', updateGridColumns);
+  updateGridColumns();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  let menuBtn = document.querySelector('.mobile-menu-button');
+  if (!menuBtn) {
+    menuBtn = document.createElement('button');
+    menuBtn.className = 'mobile-menu-button';
+    menuBtn.innerHTML = '&#9776;';
+    const nav = document.querySelector('.alingNav');
+    if (nav) nav.appendChild(menuBtn);
+  }
+  const links = document.querySelector('.alingLinks');
+  menuBtn.addEventListener('click', () => {
+    links.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+  });
+  document.addEventListener('click', (e) => {
+    if (
+      !links.contains(e.target) &&
+      !menuBtn.contains(e.target) &&
+      links.classList.contains('active')
+    ) {
+      links.classList.remove('active');
+      menuBtn.classList.remove('active');
+    }
+  });
+  document.querySelectorAll('.navLinks a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 900) {
+        links.classList.remove('active');
+        menuBtn.classList.remove('active');
+      }
+    });
+  });
+});
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const transitionBackground = document.querySelector('.transitionBackground');
-//   if (transitionBackground) { // boa prática: verificar se encontrou
-//       transitionBackground.addEventListener('click', () => {
-//           transitionBackground.classList.add('fade-out');
-//           setTimeout(() => {
-//               window.location.href = 'home.html';
-//           }, 1000);
-//       });
-//   }
-// });
-
-
-//  Função para gerar paleta de cores por  imagem
 
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("uploadImage");
@@ -115,4 +140,27 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     reader.readAsDataURL(file);
   });
+});
+
+const TextCor = () => {
+  const hex = "#" + color.map(c => c.toString(16).padStart(2, '0')).join('');
+  const corTexto = document.getElementById('CorTexto');
+  corTexto.textContent = hex;
+  corTexto.style.color = hex; 
+};
+
+function RedirectRepo() {
+  window.location.href = "https://github.com/Anselmo5/HubWave"
+}
+
+function RedirectLoading() {
+  const redirectLoading = document.getElementById("RedirectLoading");
+  if (redirectLoading) {
+    redirectLoading.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  RedirectLoading();
 });
