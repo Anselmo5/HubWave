@@ -1,7 +1,6 @@
 # HubWave
 
 [![Responsive](https://img.shields.io/badge/Responsive-Yes-4169E1?style=flat-square&logo=css3&logoColor=white)](https://github.com/anselmo/HubWave)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 HubWave is more than just a website — it's a digital flow of creativity, color, and inspiration. Built for designers, creators, and curious minds, HubWave offers a vibrant space where colors aren’t just seen — they’re felt. Whether you're exploring unique palettes, searching for the perfect gradient, or simply letting your imagination drift, HubWave is your portal to the emotional and expressive power of color.
 
@@ -66,12 +65,6 @@ HubWave/
 ## 🤝 Contributing
 
 Pull requests are welcome! For major changes, open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
 
 ---
 
